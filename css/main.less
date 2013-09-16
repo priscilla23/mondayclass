@@ -1,0 +1,80 @@
+@blue:#2980b9;
+@basefont: 16px;
+
+.roundedbutton{
+	border-radius:10px;
+	background:@blue;
+	color:#fff;
+}
+
+.square(@size){
+	width:@size;
+	height:@size;
+
+}
+
+.fontstyle (@fontcolor) {
+	font-family:'Calisto MT', "Bookman Old Style";
+	font-size: @basefont;
+	color:#ccc;
+	font-weight: 300px;
+	text-decoration: underline;
+	line-height: 42px;
+}
+
+body{
+	font-size:@basefont;
+}
+
+header{
+	background-color:000;
+		nav{
+		background-color:red;
+		
+			ul{
+			list-style-type:none;
+
+				li{
+				display: inline;
+				margin-right:15px;
+					&:list-child{
+					margin-right:0px;
+					}
+					&nth-child(2){
+						color:red;
+					}
+				}	
+			}
+		}
+	}
+
+	a{
+	color:#000;
+	&:hover{
+		text-decoration:none;
+		}
+	}
+
+	section {
+		width:800px;
+		background-color:blue;
+		article{
+			header{
+				width:400px;
+				h2{
+					font-size:32px;
+				}
+			}
+			p {
+				button[type="submit"] {
+					.roundedbutton;
+					padding: 5pc 2px;
+				}
+			}
+		}
+	}
+	footer {
+		.mysquare{
+
+		}
+	}
